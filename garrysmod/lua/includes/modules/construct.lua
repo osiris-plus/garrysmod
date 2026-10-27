@@ -36,16 +36,6 @@ if SERVER then
 		if ( Data.speeddamping != nil )	then Bone:SetDamping( Data.speeddamping, PhysBone:GetRotDamping() ) end
 		--]]
 
-		-- HACK HACK
-		-- If we don't do this the prop will be motion enabled and will
-		-- slide through the world with no gravity.
-		if ( !Bone:IsMoveable() ) then
-
-			Bone:EnableMotion( true )
-			Bone:EnableMotion( false )
-
-		end
-
 		duplicator.StoreBoneModifier( Entity, BoneID, "physprops", Data )
 
 	end
