@@ -490,6 +490,7 @@ Scheme
 				"tall"		"10" [$WINDOWS]
 				"tall"		"14" [!$WINDOWS]
 				"weight"	"500"
+				"range"  "0x0000 0x04FF" [$WINDOWS]
 			}
 		}
 
